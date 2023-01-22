@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NT Prekyba</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="interface.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>Registracion database</h1>
+        <h2>Here you can find and update informaton related with users</h2>
+      </div>
+    </header>
+    <div class="userPage">
+
+    <div class="userInfo">
+    <h3> User  info </h3>
+
+  <div id="row">
+    <h4> User name :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataUserName()">Update user name</button>
+  </div>
+    <div id="row">
+    <h4> User password :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataUserPassword()">Update user password</button>
+  </div>
+    <div id="row">
+    <h4> User role :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataUserRole()">Update user role</button>
+  </div>
+  <br /><br />
+    <button onclick="GetDataUser()">Get data about user </button>
+        <!-- table for showing data -->
+        <table id="data_table"></table>
+
+     </div>
+
+
+    </div class="userInfo">
+    
+    <h3> User  personal info </h3>
+
+ 
+    <div id="row">
+    <h4> User Id :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataPersonUserId()">Update user Id</button>
+  </div>
+    <div id="row">
+    <h4> Person name  :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataPersonName()">Update person name</button>
+  </div>
+    <div id="row">
+    <h4> Person surname :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataPersonSurname()">Update person surname</button>
+  </div>
+    <div id="row">
+    <h4> Person Id Code :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataPersonIdCode()">Update person Id Code </button>
+  </div>
+    <div id="row">
+    <h4> Person Phone Nr :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataPersonPhoneNumber()">Update person Phone number</button>
+  </div>
+    <div id="row">
+    <h4> Person Email  :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataPersonEmail()">Update person email</button>
+  </div>
+    <div id="row">
+    <h4> Person Picture  :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataPersonPicture()">Update person picture</button>
+  </div>
+  <br /><br />
+    <button onclick="GetDataPerson()">Get data about person </button>
+        <!-- table for showing data -->
+        <table id="data_table"></table>
+  </div>
+
+
+
+   </div class="userInfo">
+
+    <h3> User adress  info </h3>
+
+    <div id="row">
+    <h4> Person Id :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="GetData()">Update person Id</button>
+  </div>
+    <div id="row">
+    <h4> City   :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataPlaceCity()">Update city</button>
+  </div>
+    <div id="row">
+    <h4> Street :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataPlaceStreet()">Update street </button>
+  </div>
+    <div id="row">
+    <h4> Home Nr :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataPlaceHomeNr()">Update home number </button>
+  </div>
+    <div id="row">
+    <h4> Flat Nr :  </h4>  <input type="text" id="name" /> <button id = "update" onclick="UpdateDataFlatNr()">Update flat number</button>
+  </div>
+
+  <br /><br />
+    <button onclick="GetDataPlace()">Get data about adress </button>
+        <!-- table for showing data -->
+        <table id="data_table"></table>
+
+  </div>
+
+ 
+</div class="userInfo">
+
+    <h3> Delete User </h3>
+    <div id="row">
+    <h4> User Id :  </h4>  <input  type="text" id="name" /> <button id = "update" onclick="DeleteDataUser()">Delete User</button>
+    <br /><br />
+    </div>
+
+  </div>
+
+</div>
+
+
+        <div id="register-button-container">
+          <a type = "submit" class="register-button"href="user.html"> Log out</a>
+        </div>
+     
+
+</html>

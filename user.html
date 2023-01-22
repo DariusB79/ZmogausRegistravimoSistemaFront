@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>Registration system </h1>
+        <h2>Please register or log in<h2>
+      </div>
+    </header>
+    <div>
+      <h3>User</h3>
+    </div>
+    <section class="form-container">
+      
+      <form id="userForm">
+        <label for="userName">User Name</label>
+        <input
+          type="text"
+          id="UserName"
+          name="UserName"
+          placeholder="Please enter user name"
+        />
+        <label for="password">Password</label>
+        <input 
+          type="password"
+          id="password" 
+          name="password"
+          placeholder="Please enter password" />
+        
+          <label for="role">Role</label>
+        <input 
+          type="text"
+          id="role" 
+          name="role"
+          value = "User" />
+
+          <div id="register-button-container">
+            <a type = "submit" class="register-button" href="person.html"> Register </a>
+          </div>
+        <div id="register-button-container">
+          <a type = "submit" class="register-button" href="interface.html"> Login </a>
+        </div>
+      </form>
+      <div class="statusMessage">
+        <!-- display server Message -->
+      </div>
+    </section>
+
+    <script>
+
+      document.querySelector("form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const userName = document.getElementById("userName").value;
+        const password = document.getElementById("password").value;
+        const role = document.getElementById("role").value;
+
+        const user = {
+            userName : userName ,
+            password: password,
+            role : role ,
+        };
+        fetch("https://localhost:7015/User/AddNewUser", {
+          method: "POST",
+          body: JSON.stringify(users),
+          headers: {
+            Accept: "text/json",
+            "Content-Type": "application/json",
+          },
+        }).then((res) => {
+          if (res.ok) {
+            alert("Uzklausa sekminga");
+            window.location.replace("person.html");
+          } else {
+            alert("Uzklausa nesekminga");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

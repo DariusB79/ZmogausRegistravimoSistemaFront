@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+header {
+  background-color: #083096;
+  color: white;
+  
+}
+header div {
+  padding: 4rem 0;
+}
+header h1,
+header h2 {
+  margin: 0;
+}
+header h2 {
+  padding-top: 0.2rem;
+  font-weight: 400;
+}
+h3 {
+  font-weight: 600;
+  align-content: center;
+}
+
+
+nav {
+  display: flex;
+}
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+button {
+  display: flex;
+  color: black;
+  background-color: rgb(71, 154, 243);
+  padding: 0.5rem 1.4rem;
+  border: 1px solid rgb(60, 7, 109);
+  border-radius: 6px;
+  font-size: 1.2rem;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+#register-button-container {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2.4rem;
+}
+
+
+.register-button {
+  color: white;
+  background-color: #213ddb;
+  border: 1px solid rgb(11, 10, 10);
+  border-radius: 6px;
+  align-items: center;
+  padding: 0.5rem 1.4rem;
+  text-decoration: none;
+}
+
+
+
+
+.form-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+#userForm
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 15%;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+#userForm, userId {
+  width: 15rem;
+}
+#userForm label {
+  font-weight: bold;
+}
+#userForm input {
+  padding: 0.6rem;
+  border: 1px solid lightgrey;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+#userForm select {
+  padding: 0.6rem;
+  border: 1px solid lightgrey;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: white;
+}
+#userForm button {
+  width: 10rem;
+}
+
+
+
+#addPerson
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 15%;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+#addPerson {
+  width: 15rem;
+}
+#addPerson label {
+  font-weight: bold;
+}
+#addPerson input {
+  padding: 0.6rem;
+  border: 1px solid lightgrey;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+#addPerson select {
+  padding: 0.6rem;
+  border: 1px solid lightgrey;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: white;
+}
+#addPerson button {
+  width: 10rem;
+}
+
+
+
+
+#addPlace
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 15%;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+#addPlace {
+  width: 15rem;
+}
+#addPlace label {
+  font-weight: bold;
+}
+#addPlace input {
+  padding: 0.6rem;
+  border: 1px solid lightgrey;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+#addPlaceselect {
+  padding: 0.6rem;
+  border: 1px solid lightgrey;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: white;
+}
+#addPlace button {
+  width: 10rem;
+}
+
+
+
+.userInfo {
+display: inline-block
+
+}
+
+.userPage {
+
+  display: flex;
+  flex-direction: row;
+}
+
+#row {
+  display: inline-table;
+}
